@@ -1,0 +1,427 @@
+/*----------------------------------------*/
+/*---------------- Algemeen --------------*/
+/*----------------------------------------*/
+
+
+html, body {
+	background-color:#4B6073;
+	margin: 0;
+	padding: 0;
+	font-family:'Roboto', sans-serif;
+	font-size:1em;
+	line-height:1.8em;
+}
+
+h1 {
+	font-size:2em;
+
+}
+
+article h1 {
+	font-size:1.5em;
+}
+
+h2 {
+	font-size:1.1em;
+
+}
+
+h3 {
+	font-size:1em;
+
+}
+
+a {
+	 text-decoration:none;
+	 color: #00A2CA;
+}
+ 
+a:hover {
+    color: #006E8A;
+	transition: 0.3s;
+}
+ 
+a:active {
+	color: #004F63;
+}
+
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+blockquote {
+	font-style:italic;
+	color:#838383;
+}
+
+blockquote::before {
+	content:open-quote;
+}
+
+blockquote::after {
+	content:close-quote;
+}
+
+body > section {
+	margin: 0 auto;
+	max-width: 74%;
+	background:white;
+	padding: 5% 10%;
+	border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+body > section:last-of-type {
+	padding-bottom:10rem;
+}
+
+nav > ul {
+	padding: 0;
+	margin: 0;
+}
+
+nav > ul > li {
+	list-style:none;
+	text-align: center;
+}
+
+nav > ul > li > a{
+	text-decoration: none;
+}
+
+body > footer {
+    background: rgb(219, 219, 219);
+    margin-top: 6rem;
+    text-align: center;
+    padding: 0.6rem;
+    color:grey;
+}
+
+
+
+
+body section article header p {
+    margin: 0;	
+}
+
+aside {
+ 	max-width: 18%;
+    position: absolute;
+    margin-top: 0.5em;
+    padding: 1em;
+    /* margin-left: 1%; */
+    background-color: whitesmoke;
+    border: 1px solid silver;
+    top: 275px;
+    background-color: white;
+    right: 9%;}
+
+body > section:nth-child(2) > main {
+    max-width: 74%;}
+
+
+body > aside > section > h1 {
+    font-size: 1em;}
+
+/*-----------------------------------------*/
+/*----------------- Header ----------------*/
+/*-----------------------------------------*/
+
+/***************** Flexbox *****************/
+
+body > header {
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin: 0px auto;
+	background-color: #D6D6D6;
+	padding: 2rem 2%;
+	justify-content: space-around;
+	margin:0 auto;
+	width: 90%;
+	
+	background: #ededed; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ededed 0%, #d6d6d6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#d6d6d6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ededed 0%,#d6d6d6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ededed 0%,#d6d6d6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ededed 0%,#d6d6d6 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ededed 0%,#d6d6d6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#d6d6d6',GradientType=0 ); /* IE6-9 */
+}
+
+body > header > h1, 
+body > header > p, 
+body > header > section, 
+body > header > nav, 
+body > header > form, 
+body > header > a {
+	width: 80%;
+	overflow:hidden;
+	margin: 0 auto;
+	text-align:center;
+}
+
+body > header > h1 {
+	font-size: 1em;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+body > header > section > img {
+	display: block;
+	margin-bottom: 0.3rem;
+	margin: 0 auto;
+	width: 3em;
+}
+
+
+/*    CMD LETTERS     */
+
+body > header > section {
+	order: -1;
+	margin-bottom: 1em;
+}
+
+
+body > header > a {
+    display:block;
+}
+
+
+/*------------------------------------------*/
+/*------ Flexbox Artikelen/Projecten ------*/
+/*----------------------------------------*/
+
+
+body > section:last-of-type {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	flex-direction: row;
+}
+
+body > section:nth-last-child(2) > div:first-of-type > article > footer {
+	order:2;
+	background: whitesmoke;
+	padding: 0.5rem 2rem 1.3rem;
+	margin-bottom: 5rem;
+}
+
+body > section:nth-last-child(2) > div:first-of-type > article:last-of-type > footer {
+	margin-bottom:0;
+}
+
+body > section:nth-last-child(2) > div:first-of-type > article > header > h1:first-of-type {
+	margin-top:0;
+}
+
+
+body > section > div {
+    max-width: 40%;
+    min-width: 300px;
+}
+
+
+/*------------------------------------------*/
+/*------------------ Formulier--------------*/
+/*------------------------------------------*/
+
+/*************** Required ***************/
+
+[for="name"]::after,
+[for="bedrijf"]::after,
+[for="adres"]::after,
+[for="postcode"]::after,
+[for="plaats"]::after,
+[for="tel"]::after,
+[for="email"]::after,
+
+[for="titel"]::after,
+[for="opdracht"]::after,
+[for="doelgroep"]::after,
+[for="doelstelling"]::after,
+[for="looptijd"]::after,
+[for="bedrijf"]::after,
+[for="deadline"]::after,
+
+[for="start"]::after,
+[for="werkzaamheden-s"]::after,
+[for="bedrijfsnaam-s"]::after,
+[for="adres-s"]::after,
+[for="postcode-s"]::after,
+[for="plaats-s"]::after,
+[for="sector-s"]::after,
+[for="business-s"]::after {
+	content: '*';
+}
+
+fieldset {
+    padding: 2rem;
+    background: whitesmoke;
+}
+
+fieldset fieldset {
+	margin-top:1rem;
+}
+
+form > fieldset {
+	-webkit-box-shadow: inset 0px 0px 100px 0px rgba(0, 0, 0, 0.04); 
+    -moz-box-shadow: inset 0px 0px 100px 0px rgba(0, 0, 0, 0.04); 
+    box-shadow: inset 0px 0px 100px 0px rgba(0, 0, 0, 0.04);
+}
+
+form {
+	overflow:hidden;
+}
+
+textarea {
+	max-width:20em;
+}
+
+form > fieldset:first-of-type {
+	border-top-left-radius:1em;
+	-webkit-border-top-left-radius: 1em;
+}
+
+form > fieldset:last-of-type {
+	border-bottom-right-radius:1em;
+	-webkit-border-bottom-right-radius: 1em;
+}
+
+fieldset > p {
+    line-height: 0;
+}
+
+/*************** PDF ***************/
+
+form + a[href$=".pdf"] {
+	margin-top:2rem;
+	display: inline-block;
+}
+
+form + a[href$=".pdf"]::after {
+	content:" " attr(data-kb) "kb";
+}
+
+form + a[href$=".pdf"]::before {
+	content: url('../img/pdf(small).jpg');
+	display:inline-block;
+	margin-right:1rem;
+	transform: translateY(0.7em);
+}
+
+/*************** Toggle formulier **************/
+
+.is-invisible{
+	display: none;
+}
+.is-visible {
+	display: block;
+}
+
+
+
+/********** Footer Special Rulez! ****************/
+
+body > footer > p > a {
+    color:#fff
+}
+
+/********* MEDIAQUERIES *********/
+
+@media (min-width:70em) {
+	
+	
+body > header > h1, 
+body > header > p, 
+body > header > section, 
+body > header > nav, 
+body > header > form, 
+body > header > a {
+width: 11em;
+}
+	
+body > header {
+	flex-direction:row;
+}
+	
+body > header > section {
+	order: -1;
+	margin-bottom: 1em;
+	flex-basis: 4em;
+}
+
+}
+
+@media screen and (max-width: 70em) {
+
+p {
+  font-size:14pt;
+}
+        
+header > nav {
+   /* color: #fff; */
+    text-align: center;
+    width: 100%;
+}
+
+.in-visible {
+    display: none;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.visible {
+    display: block;
+
+}
+
+header > nav li a {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #CCC;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+header > nav > a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin: 20px;
+}
+            
+header > nav > a:hover {
+    color: #575757;
+    text-decoration: none;
+}   
+
+    
+    
+body > section > div {
+        max-width: 90%;
+}
+
+body > header > section {
+    order: -1;
+    margin-bottom: 1em;
+    display: flex;
+    max-width: 175px;
+    height: 50px;}
+    
+body > section:nth-child(2) > main {
+    max-width: 100%;}
+    
+aside{
+    position: inherit;
+    margin: 0 auto;
+    max-width: 74%;
+    background: white;
+    padding: 5% 10%;
+    border: 0px;
+}
+}

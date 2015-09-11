@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="My Awesome Website for Front End Development">
+	<meta name="viewport" content="width=device-width">
+	<title>Aanmelden</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="js/modernizer.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<header>
+    	<h1>CMD Amsterdam - Intranet</h1>
+		<p>
+    		Communication and Multimedia Design is een ontwerpopleiding voor interactieve media in Amsterdam.
+		</p>
+
+		<section>
+        	<img src="img/cmd_icon_letter_c.png" alt="">
+			<img src="img/cmd_icon_letter_m.png" alt="">
+			<img src="img/cmd_icon_letter_d.png" alt="">
+		</section>
+
+     <nav>
+      <a  href="#" >&#9776;  MENU</a>
+         <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Opleiding</a></li>
+             <li><a href="#">Onderwijsprogramma</a></li>
+             <li><a href="#">Organisatie</a></li>
+             <li><a href="#">Stages en projecten</a></li>
+         </ul>
+     </nav>
+
+		<form>
+        	<input type="text" placeholder="zoek en klik">
+		</form>
+ 
+		<a href="#">profielpagina Elena Harris</a>
+
+	</header>
+	
+	<section>
+		<main>
+			<h1>Aanmelden</h1>
+			<article>
+				<p>Bent u ge&iuml;nteresseerd in samenwerken met CMD Amsterdam? Dat kan!! Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+	
+				<p><em>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</em></p>
+	
+				<p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.<br />
+				Voor vragen of opmerkingen kunt u <a href="#">contact</a> met ons opnemen.</p>
+			</article>
+		</main>
+
+		<section>
+			<form action="aanmelding.php">
+				<fieldset>
+					<legend>Contactgegevens</legend>
+	
+                    <p><label for="name">Naam</label></p>
+					<input type="text" id="name" required><br />
+	
+					<p><label for="bedrijf">Bedrijf</label></p>
+					<input type="text" id="bedrijf" required><br />
+	
+					<p><label for="adres">Adres</label></p>
+					<input type="text" id="adres" required><br />
+	
+					<p><label for="postcode">Postcode</label></p>
+					<input type="text" id="postcode" required><br />
+	
+					<p><label for="plaats">Plaats</label></p>
+					<input type="text" id="plaats" required><br />
+	
+					<p><label for="tel">Telefoonnummer</label></p>
+					<input type="tel" id="tel" required><br />
+	
+					<p><label for="email">E-mail adres</label></p>
+					<input type="email" id="email" required><br />
+				</fieldset>
+			
+				<fieldset>
+				
+				<legend>Ik wil mij aanmelden:</legend>
+				<input type="radio" id="keuze-1" name="keuze" checked="">
+				<label for="keuze-1">Voor een project</label>
+				
+				<input type="radio" id="keuze-2" name="keuze">
+				<label for="keuze-2">Als stagebedrijf</label>
+				
+					<fieldset>
+						<legend>Project</legend>
+						
+						<label for="titel">Titel</label>
+						<input type="text" id="titel" required><br />
+							
+						<label for="opdracht">Opdrachtomschrijving</label>
+						<textarea id="opdracht" required></textarea><br />
+						
+						<label for="doelgroep">Doelgroepomschrijving</label>
+						<textarea id="doelgroep" required></textarea><br />
+						
+						<label for="doelstelling">Doelstelling / Intentie van het project</label>
+						<textarea id="doelstelling" required></textarea><br />
+						
+						<label for="looptijd">Looptijd</label>
+						<input type="text" id="looptijd" required><br />
+						
+						<label for="deadline">Deadline</label>
+						<input type="text" id="deadline" required><br />
+						
+						<p>Geschikt voor:</p>
+						
+						<input type="checkbox" name="geschikt-p" value="eerstejaars" id="eerste-p">
+						<label for="eerste-p">Eerstejaars studenten</label><br />
+								
+						<input type="checkbox" name="geschikt-p" value="tweedejaars" id="tweede-p">
+						<label for="tweede-p">Tweedejaars studenten</label><br />
+						
+						<input type="checkbox" name="geschikt-p" value="derdejaars" id="derde-p">
+						<label for="derde-p">Derdejaars studenten</label><br />
+						
+						<input type="checkbox" name="geschikt-p" value="vierdejaars" id="vierde-p">
+						<label for="vierde-p">Vierdejaars studenten</label><br />
+						
+						<input type="checkbox" name="geschikt-p" value="onbekend" id="onbekend-p">
+						<label for="onbekend-p">Onbekend</label><br />
+						
+						<label for="opmerkingen-p">Opmerkingen</label>
+						<textarea id="opmerkingen-p"></textarea>
+					
+					</fieldset>
+	
+					<fieldset>
+						<legend>Stage</legend>
+	
+						<p>Geschikt voor:</p>
+						
+						<input type="checkbox" name="geschikt-s" value="tweedejaars" id="tweede-s">
+						<label for="tweede-s">Tweedejaars studenten</label><br />
+						
+						<input type="checkbox" name="geschikt-s" value="afstudeer" id="afstudeer-s">
+						<label for="afstudeer-s">Afstudeer studenten</label><br />
+		
+						<input type="checkbox" name="geschikt-s" value="onbekend" id="onbekend-s">
+						<label for="onbekend-s">Onbekend</label><br />
+						
+						<p>Duur en begin datum</p>
+	
+						<label for="duur">Hoe lang is de stage?</label>
+						<select name="duur" id="duur" required>
+							<option value="" selected>Aantal weken</option>
+							<option value="10-weken">10 weken</option>
+							<option value="20-weken">20 weken</option>
+						</select><br />
+	
+						<label for="start">Begin datum</label>
+						<input type="date" id="start" required><br />
+	
+						<label for="werkzaamheden-s">Beschrijving stagewerkzaamheden</label>
+						<textarea id="werkzaamheden-s" required></textarea>
+	
+						<p>Beschrijving stagebedrijf</p>
+						
+						<label for="bedrijfsnaam-s">Bedrijfsnaam</label>
+						<input type="text" id="bedrijfsnaam-s" required><br />
+						
+						<label for="adres-s">Adres</label>
+						<input type="text" id="adres-s" required><br />
+						
+						<label for="postcode-s">Postcode</label>
+						<input type="text" id="postcode-s" required><br />
+						
+						<label for="plaats-s">Plaats</label>
+						<input type="text" id="plaats-s" required><br />
+						
+						<label for="sector-s">Sector</label>
+						<input type="text" id="sector-s" required><br />
+						
+						<label for="business-s">Core Business</label>
+						<input type="text" id="business-s" required><br />
+	
+						<label for="opmerkingen-s">Opmerkingen</label>
+						<textarea id="opmerkingen-s"></textarea>
+	
+					</fieldset>
+				</fieldset>		
+	
+				<input type="submit">
+			</form>
+			
+			<a href="http://example.com/file.pdf" data-kb="1337">A white paper</a>
+		</section>
+	</section>
+	<footer>
+			<p>Developed by <a href="http://www.toonkuijpers.com" target="_blank" >Toon Kuijpers</a></p>
+	</footer>
+	
+    <script src="js/toggle.js"></script>
+    <script src="js/nav.js"></script>
+
+    
+</body>
+</html>
